@@ -33,7 +33,11 @@ function Admin() {
                            <h4>{res.name}</h4>
                            <h6>quantity- {res.quantity}</h6>
                            <h6>Rs. {res.price}</h6>
-                           <FormControl component="fieldset">
+                        </ListGroup.Item>
+                       )
+                   })
+               }
+                       <FormControl component="fieldset">
                 <FormLabel component="legend">Order Status</FormLabel>
                 <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
                     <FormControlLabel value="pending" control={<Radio />} label="pending" />
@@ -41,10 +45,6 @@ function Admin() {
                     <FormControlLabel value="delivered" control={<Radio />} label="delivered" />
                 </RadioGroup>
                 </FormControl>
-                        </ListGroup.Item>
-                       )
-                   })
-               }
 
                 </ListGroup>
                </Col>
